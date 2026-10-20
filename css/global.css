@@ -23,17 +23,7 @@
   --menu-text-weight: 500;
 }
 
-body,
-img,
-h1,
-p,
-fieldset,
-legend,
-label,
-input,
-select,
-textarea,
-button {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

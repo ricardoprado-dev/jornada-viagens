@@ -1,3 +1,7 @@
+.offers {
+  margin-bottom: 104px;
+}
+
 .offers-cards {
   display: flex;
   flex-direction: column;
@@ -5,18 +9,17 @@
   gap: 24px;
 }
 
-.card {
+.offers-cards .card {
   box-sizing: border-box;
   width: 312px;
-  height: auto;
+  height: 302px;
   padding: 24px 16px;
   border-radius: 16px;
   color: var(--text-secondary-color);
-  background-color: #000;
   text-align: center;
 }
 
-.card header {
+.offers-cards .card header {
   display: block;
   position: static;
   margin-bottom: 8px;
@@ -24,45 +27,49 @@
   background-color: transparent;
 }
 
-.card header p {
+.offers-cards .card header p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
 
-.card header h3 {
+.offers-cards .card header h3 {
   margin: 8px 0 0;
   font-size: 40px;
   font-weight: var(--title-weight);
 }
 
-.card header span {
+.offers-cards .card header span {
   display: inline-block;
   margin-top: 24px;
   font-size: 32px;
 }
 
-.card.japao {
+.offers-cards .card.japao {
   background-image: url(../img/bg-card-japao.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.card.sanandreas {
+.offers-cards .card.sanandreas {
   background-image: url(../img/bg-card-san-andreas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.card.paraiba {
+.offers-cards .card.paraiba {
   background-image: url(../img/bg-card-paraiba.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.card.manaus {
+.offers-cards .card.manaus {
   background-image: url(../img/bg-card-manaus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,19 +78,24 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .offers-cards .card {
+    width: 420px;
+    height: 308px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
+  .offers-cards .card {
     width: 588px;
     height: 308px;
   }
 
-  .card header h3 {
+  .offers-cards .card header h3 {
     font-size: 48px;
   }
 
-  .card header span {
+  .offers-cards .card header span {
     font-size: 40px;
   }
 }
@@ -91,7 +103,7 @@
 @media screen and (min-width: 1440px) {
   .offers-cards {
     width: 588px;
-    height: 308px;
+    height: auto;
     margin-inline: auto;
   }
 }

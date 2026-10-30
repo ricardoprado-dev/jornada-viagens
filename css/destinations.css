@@ -1,7 +1,111 @@
-.destinations .item header {
+.destinations {
+  width: 312px;
+  margin: 104px auto 0;
+}
+
+.destinations .destination-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.destinations .item {
+  width: 100%;
+  min-width: 0;
+}
+
+.destinations .item .img-item {
+  width: 100%;
+  height: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destinations .item.tokyo .img-item {
+  background-image: url(../img/Tokyo-mobile.jpg);
+}
+
+.destinations .item.osaka .img-item {
+  background-image: url(../img/Osaka-mobile.jpg);
+}
+
+.destinations .item header h4 {
+  margin: 24px 0;
+  font-size: 28px;
+  font-weight: var(--title-weight);
+}
+
+.destinations .item p {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+}
+
+.destinations .button {
   display: block;
-  position: static;
-  margin-bottom: 8px;
-  padding: 0;
-  background-color: transparent;
+  width: 100%;
+  max-width: 280px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .destinations .item footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    width: 648px;
+  }
+
+  .destinations .item .img-item {
+    height: 452px;
+  }
+
+  .destinations .item.tokyo .img-item {
+    background-image: url(../img/Tokyo-tablet.jpg);
+  }
+
+  .destinations .item.osaka .img-item {
+    background-image: url(../img/Osaka-tablet.jpg);
+  }
+
+  .destinations .button {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destinations {
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destinations {
+    width: 1200px;
+  }
+
+  .destinations .destination-items {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .destinations .item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .destinations .item.tokyo .img-item {
+    background-image: url(../img/Tokyo-pc.jpg);
+  }
+
+  .destinations .item.osaka .img-item {
+    background-image: url(../img/Osaka-pc.jpg);
+  }
 }

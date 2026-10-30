@@ -31,6 +31,21 @@ body {
   color: var(--text-primary-color);
 }
 
+.section {
+  width: 312px;
+  margin: 0 auto 88px;
+}
+
+.section .hero {
+  width: 100%;
+  margin: 0;
+}
+
+.section-title {
+  width: 200;
+  margin: 0 auto 32px;
+}
+
 .section-title h2 {
   font-size: 28px;
   font-weight: var(--title-weight);
@@ -47,29 +62,44 @@ body {
 }
 
 .button {
-  width: 280px;
+  min-width: 280px;
   height: 64px;
   color: var(--text-secondary-color);
   font-weight: var(--title-weight);
   font-size: 20px;
   background-color: var(--button-secondary-color);
+  border-radius: 16px;
   display: inline-block;
   text-decoration: none;
-  line-height: 64px;
   text-align: center;
-  border-radius: 16px;
   padding: auto 16px 24px 16px;
-  
+  line-height: 64px;
 }
 
 @media screen and (min-width: 768px) {
+  .section {
+    width: 640px;
+  }
+
+  .section-title {
+    width: 100%;
+  }
   .section-title h2 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .section {
+    width: 900px;
+  }
   .button:hover {
     background-color: var(--button-primary-color);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    width: 1200px;
   }
 }

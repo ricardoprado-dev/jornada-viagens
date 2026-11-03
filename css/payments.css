@@ -1,0 +1,115 @@
+.payments {
+  width: 312px;
+  margin: 104px auto 0;
+}
+
+.payments .image-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.payments .content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.payments .image-gallery .image.bag {
+  aspect-ratio: 288 / 508;
+  background-image: url(../img/bag.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.payments .image-gallery .image.passport {
+  aspect-ratio: 288 / 508;
+  background-image: url(../img/passport.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.payments .image-gallery .image.people {
+  aspect-ratio: 624 / 364;
+  background-image: url(../img/people.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.payments .image-gallery .image.colspan-2 {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 768px) {
+  .payments {
+    width: 648px;
+  }
+
+  .payments .image-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .payments .image-gallery .image.bag {
+    aspect-ratio: 624 / 508;
+    background-image: url(../img/bag-tablet.png);
+  }
+
+  .payments .image-gallery .image.passport {
+    aspect-ratio: 624 / 508;
+    background-image: url(../img/passport-tablet.png);
+  }
+
+  .payments .image-gallery .image.people {
+    aspect-ratio: 1296 / 364;
+    background-image: url(../img/people-tablet.png);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .payments {
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments {
+    width: 1200px;
+  }
+
+  .payments .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .payments .content-container .text-content {
+    width: 360px;
+    flex: 0 1 360px;
+  }
+
+  .payments .content-container .image-gallery {
+    width: 790px;
+    flex: 0 1 790px;
+    min-width: 0;
+    margin-top: 0;
+  }
+
+  .payments .image-gallery .image.bag {
+    aspect-ratio: 767 / 508;
+    background-image: url(../img/bag-pc.png);
+  }
+
+  .payments .image-gallery .image.passport {
+    aspect-ratio: 767 / 508;
+    background-image: url(../img/passport-pc.png);
+  }
+
+  .payments .image-gallery .image.people {
+    aspect-ratio: 1580 / 364;
+    background-image: url(../img/people-pc.png);
+  }
+}

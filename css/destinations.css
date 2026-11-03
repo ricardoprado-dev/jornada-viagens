@@ -1,7 +1,8 @@
 .destinations {
-  width: 312px;
-  margin: 104px auto 0;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .destinations .destination-items {
   display: flex;

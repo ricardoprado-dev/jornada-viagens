@@ -27,6 +27,23 @@
   margin: 0 0 8px;
 }
 
+.main-footer .footer-content a,
+.main-footer .footer-content a:visited {
+  color: #ff6b6b;
+  font-weight: var(--title-weight);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.main-footer .footer-content a:hover {
+  color: var(--text-secondary-color);
+}
+
+.main-footer .footer-content a:focus-visible {
+  outline: 2px solid #ff6b6b;
+  outline-offset: 3px;
+}
+
 .main-footer .footer-social {
   display: flex;
   flex-direction: column;

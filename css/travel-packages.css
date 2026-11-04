@@ -1,0 +1,271 @@
+.travel-packages-page .package-hero {
+  box-sizing: border-box;
+  min-height: 400px;
+  padding: 40px 24px;
+  display: flex;
+  align-items: center;
+  background: url("../img/travel-packages/banner-japao-mobile-true.jpg") center /
+    cover no-repeat;
+}
+
+.travel-packages-page .package-hero .hero-content {
+  width: 100%;
+  color: var(--text-secondary-color);
+}
+
+.travel-packages-page .package-hero h1 {
+  max-width: 520px;
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: var(--title-weight);
+}
+
+.travel-packages-page .package-hero hr {
+  width: 180px;
+  height: 4px;
+  margin: 16px 0 24px;
+  border: 0;
+  background-color: var(--button-secondary-color);
+}
+
+.travel-packages-page .package-hero p {
+  max-width: 520px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.travel-packages-page .package-destinations {
+  width: 312px;
+  max-width: calc(100% - 48px);
+}
+
+.travel-packages-page .package-destinations .item.tokyo .img-item {
+  background-image: url("../img/Tokyo-mobile.jpg");
+}
+
+.travel-packages-page .package-destinations .item.osaka .img-item {
+  background-image: url("../img/Osaka-mobile.jpg");
+}
+
+.travel-packages-page .package-destinations .item h3 {
+  margin: 24px 0;
+}
+
+.travel-packages-page .package-payment {
+  box-sizing: border-box;
+  width: 312px;
+  max-width: calc(100% - 48px);
+  margin: 104px auto;
+}
+
+.travel-packages-page .package-payment .content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.travel-packages-page .package-payment .text-content h3 {
+  margin: 0 0 24px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.travel-packages-page .package-payment .text-content h4 {
+  margin: 0 0 24px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.travel-packages-page .package-payment .text-content p {
+  margin: 0;
+}
+
+.travel-packages-page .package-payment .travel-package-cta {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  max-width: 100%;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.travel-packages-page .package-payment .image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.travel-packages-page .package-payment .image {
+  min-width: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.travel-packages-page .package-payment .image.temple,
+.travel-packages-page .package-payment .image.osaka-night {
+  aspect-ratio: 288 / 508;
+}
+
+.travel-packages-page .package-payment .image.temple {
+  background-image: url("../img/travel-packages/pacotes - japao - 1 - mobile.png");
+}
+
+.travel-packages-page .package-payment .image.osaka-night {
+  background-image: url("../img/travel-packages/pacotes - japao - 2 - mobile.png");
+}
+
+.travel-packages-page .package-payment .image.torii {
+  aspect-ratio: 624 / 364;
+  grid-column: 1 / -1;
+  background-image: url("../img/travel-packages/pacotes - japao - 3 - mobile - imagem horizontal.png");
+}
+
+.travel-packages-page .package-bottom-hero .hero-img {
+  background-image: url("../img/travel-packages/pacotes - rodapé - mobile.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .travel-packages-page .package-hero {
+    min-height: 620px;
+    padding: 64px max(60px, calc((100% - 1200px) / 2));
+    background-image: url("../img/travel-packages/banner-japao-tablet.png");
+  }
+
+  .travel-packages-page .package-hero h1 {
+    font-size: 40px;
+  }
+
+  .travel-packages-page .package-hero p {
+    font-size: 24px;
+  }
+
+  .travel-packages-page .package-destinations,
+  .travel-packages-page .package-payment {
+    width: 648px;
+    max-width: 100%;
+  }
+
+  .travel-packages-page .testimonial-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .travel-packages-page .testimonial-container article {
+    flex: 0 1 auto;
+  }
+
+  .travel-packages-page .package-destinations .item.tokyo .img-item {
+    background-image: url("../img/Tokyo-tablet.jpg");
+  }
+
+  .travel-packages-page .package-destinations .item.osaka .img-item {
+    background-image: url("../img/Osaka-tablet.jpg");
+  }
+
+  .travel-packages-page .package-payment .image.temple,
+  .travel-packages-page .package-payment .image.osaka-night {
+    aspect-ratio: 624 / 508;
+  }
+
+  .travel-packages-page .package-payment .image.temple {
+    background-image: url("../img/travel-packages/pacotes - japão  - 1 - tablet.png");
+  }
+
+  .travel-packages-page .package-payment .image.osaka-night {
+    background-image: url("../img/travel-packages/pacotes - japão - 2 - tablet.png");
+  }
+
+  .travel-packages-page .package-payment .image.torii {
+    aspect-ratio: 1296 / 364;
+    background-image: url("../img/travel-packages/pacotes - japão - 3 - tablet - imagem horizontal.png");
+  }
+
+  .travel-packages-page .package-bottom-hero .hero-img {
+    background-image: url("../img/travel-packages/pacotes - rodapé - tablet.png");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .travel-packages-page .package-hero {
+    background-image: url("../img/travel-packages/banner-japao.png");
+  }
+
+  .travel-packages-page .package-destinations,
+  .travel-packages-page .package-payment {
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .travel-packages-page .package-destinations,
+  .travel-packages-page .package-payment {
+    width: 1200px;
+  }
+
+  .travel-packages-page .package-destinations .item.tokyo .img-item {
+    background-image: url("../img/Tokyo-pc.jpg");
+  }
+
+  .travel-packages-page .package-destinations .item.osaka .img-item {
+    background-image: url("../img/Osaka-pc.jpg");
+  }
+
+  .travel-packages-page .package-payment .content-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .travel-packages-page .package-payment .text-content {
+    flex: 0 1 360px;
+  }
+
+  .travel-packages-page .testimonial-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 32px;
+  }
+
+  .travel-packages-page .testimonial-container article {
+    flex: 1 1 0;
+  }
+
+  .travel-packages-page .package-payment .travel-package-cta {
+    display: none;
+  }
+
+  .travel-packages-page .package-payment .image-gallery {
+    flex: 0 1 790px;
+    width: 790px;
+    min-width: 0;
+    margin-top: 0;
+  }
+
+  .travel-packages-page .package-payment .image.temple,
+  .travel-packages-page .package-payment .image.osaka-night {
+    aspect-ratio: 767 / 508;
+  }
+
+  .travel-packages-page .package-payment .image.temple {
+    background-image: url("../img/travel-packages/pacotes - japão -  1 - pc.png");
+  }
+
+  .travel-packages-page .package-payment .image.osaka-night {
+    background-image: url("../img/travel-packages/pacotes - japão - 2 - pc.png");
+  }
+
+  .travel-packages-page .package-payment .image.torii {
+    aspect-ratio: 1580 / 364;
+    background-image: url("../img/travel-packages/pacotes - japão - 3 -  pc - imagem horizontal.png");
+  }
+
+  .travel-packages-page .package-bottom-hero .hero-img {
+    background-image: url("../img/travel-packages/pacotes - rodapé - pc.png");
+  }
+}

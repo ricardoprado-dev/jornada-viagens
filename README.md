@@ -1,49 +1,82 @@
 # Jornada Viagens
 
-Landing page responsiva para uma agência de viagens, desenvolvida como projeto de estudo de HTML e CSS. A página apresenta ofertas, categorias de viagem, destinos populares e condições de pagamento, seguindo a referência visual do projeto.
+Site responsivo de uma agência de viagens fictícia, desenvolvido como projeto de estudo de HTML e CSS durante o curso de Responsividade da Alura. O projeto apresenta a agência, ofertas e destinos, além de páginas de pacotes, blog e contato.
 
-## Seções da página
+## Páginas
 
-- **Apresentação:** imagem principal e texto sobre a agência.
-- **Ofertas da semana:** cards de pacotes com destino, preço e link para detalhes.
-- **Busca por categoria:** pacotes nacionais e internacionais, transfer e seguro viagem.
-- **Destinos populares:** destaques para Tóquio e Osaka.
-- **Condições de pagamento:** informações sobre parcelamento, cartão e Pix, acompanhadas por imagens temáticas.
+- **Início (`index.html`):** apresentação da agência, ofertas da semana, categorias de viagem, destinos populares, condições de pagamento e depoimentos.
+- **Pacotes de viagem (`pacotes-de-viagens.html`):** página de um pacote para o Japão, com destinos da excursão, preço, condições de pagamento e depoimentos.
+- **Blog (`blog.html`):** artigo sobre uma viagem a Tóquio e sugestões de outros destinos no Japão.
+- **Contato (`contato.html`):** informações de contato e formulário com campos para nome, telefone, e-mail, assunto e mensagem.
 
-## Tecnologias
+O menu de navegação conecta as páginas HTML e mantém a navegação na mesma aba.
 
-- HTML5
-- CSS3
+## Recursos e tecnologias
 
-O layout usa media queries para adaptar conteúdo e imagens a telas mobile, tablet e desktop. A galeria de pagamento utiliza arquivos de imagem próprios para cada faixa de tela.
+- HTML5, com elementos semânticos, navegação e conteúdo estruturado.
+- CSS3, com estilos separados por página e seção.
+- Layout responsivo com media queries e imagens adaptadas a diferentes tamanhos de tela.
+- Fonte Montserrat incluída localmente no projeto.
+- Imagens e ícones próprios para destinos, ofertas, depoimentos e conteúdo editorial.
 
-## Como visualizar
+O projeto é estático: não utiliza JavaScript, framework, dependências ou processo de build.
 
-Abra `index.html` em um navegador. Para uma experiência de desenvolvimento local, também é possível abrir a pasta do projeto com uma extensão de servidor local, como Live Server.
-
-## Estrutura
+## Estrutura do projeto
 
 ```text
 jornada-viagens/
+├── blog.html
+├── contato.html
+├── index.html
+├── pacotes-de-viagens.html
+├── README.md
 ├── css/
+│   ├── blog.css
 │   ├── categories.css
+│   ├── contact.css
 │   ├── destinations.css
+│   ├── footer.css
 │   ├── global.css
 │   ├── header.css
 │   ├── hero.css
 │   ├── offers.css
 │   ├── payments.css
-│   └── style.css
+│   ├── style.css
+│   ├── testimonials.css
+│   └── travel-packages.css
 ├── fonts/
-├── img/
-├── index.html
-└── README.md
+│   └── Montserrat-VariableFont_wght.ttf
+└── img/
+    ├── blog/
+    │   ├── mobile-blog/
+    │   ├── pc-blog/
+    │   └── tablet-blog/
+    ├── contato/
+    └── travel-packages/
 ```
+
+As pastas dentro de `img/` guardam imagens temáticas das páginas de blog, contato e pacotes. A pasta também contém imagens compartilhadas pelo site, como logotipos, ícones, fotos de destinos, ofertas e depoimentos.
+
+### Organização dos estilos
+
+- `style.css` reúne os arquivos CSS do projeto por meio de `@import`.
+- `global.css` define a fonte, cores, elementos e estilos compartilhados.
+- `header.css` e `footer.css` estilizam o cabeçalho, a navegação e o rodapé.
+- `hero.css`, `offers.css`, `categories.css`, `destinations.css`, `payments.css` e `testimonials.css` estilizam seções da página inicial.
+- `travel-packages.css`, `blog.css` e `contact.css` contêm estilos específicos das respectivas páginas.
+
+## Como visualizar
+
+1. Abra a pasta `jornada-viagens` no editor ou localize-a no computador.
+2. Abra `index.html` em um navegador.
+
+Para desenvolver e testar as páginas em um servidor local, abra a pasta no VS Code e use uma extensão como o Live Server. As demais páginas podem ser acessadas pelo menu do site ou diretamente pelos respectivos arquivos HTML.
 
 ## Responsividade
 
-- **Mobile:** conteúdo em coluna e imagens de pagamento empilhadas.
-- **Tablet:** galeria de pagamento em duas colunas, com a imagem de pessoas ocupando toda a largura.
-- **Desktop:** texto de pagamento ao lado da galeria e imagens preparadas para telas maiores.
+Os estilos usam media queries para adaptar a apresentação a telas mobile, tablet e desktop. Os principais pontos de ajuste utilizados são `768px`, `1024px` e `1440px`; alguns componentes também têm regras específicas para telas a partir de `1920px`. Elementos como banners e galerias utilizam imagens distintas para diferentes larguras quando necessário.
 
-As imagens de destino, ofertas e demais elementos visuais ficam na pasta `img/`; a tipografia Montserrat fica em `fonts/`.
+## Observações
+
+- O formulário de contato é apenas a interface HTML: o projeto não possui serviço de envio ou armazenamento das mensagens.
+- Alguns links de ofertas, categorias e redes sociais ainda são destinos demonstrativos (`#`) e podem ser conectados a páginas ou serviços reais posteriormente.
